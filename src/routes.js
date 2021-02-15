@@ -32,4 +32,6 @@ routes.get('/notifications', NotificationController.index);
 routes.post('/appointments', AppointmentController.store);
 routes.post('/files', upload.single('file'), FileController.store);
 
+routes.delete('/appointments/:id', AppointmentController.delete);
+
 export default routes;
